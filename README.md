@@ -149,17 +149,19 @@ Optei por calcular o lucro utilizando os valores retornados pela API externa par
 
 Dessa forma, se os dados forem alterados na API externa, o lucro será calculado com base nos novos valores.
 
-Teste da API
+## Teste da API
 
-Após finalizar a implementação, iniciei o servidor utilizando npm start e realizei uma requisição GET para a rota /filmes utilizando o curl.
+Após finalizar a implementação, iniciei o servidor utilizando `npm start` e realizei uma requisição GET para a rota `/filmes` utilizando o `curl`.
 
+```bash
 curl.exe -i http://localhost:3000/filmes
+```
 
-A API retornou o status HTTP 200 OK e um array JSON contendo 8 filmes com os dados transformados.
+A API retornou o status HTTP `200 OK` e um array JSON contendo 8 filmes com os dados transformados.
 
 Conferi o resultado retornado para verificar a conversão da duração para segundos, a nota IMDb em formato de string, o cálculo do lucro, a maior premiação e a seleção de uma única sinopse.
 
-Também verifiquei que as propriedades locacoes, poster e trailer não aparecem na resposta final.
+Também verifiquei que as propriedades `locacoes`, `poster` e `trailer` não aparecem na resposta final.
 
 ## Aprendizados
 
